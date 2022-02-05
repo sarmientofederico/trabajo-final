@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!-- SEO -->
+    <meta name="author" content="Federico Sarmiento">
+    <meta name="description" content="hola"> <!-- Es lo que aparece abajo del titulo en google(Tiene que ser diferente todos los html) -->
+    <meta name="keywords" content="Federico Sarmiento, CoderHouse, Proyecto final"><!-- Palabras clave que varien agregandole un par en cada html-->
+    <!-- OG -->
+    <!-- Todo lo que dice Og es para redes sociales -->
+    <meta property="og:tittle" content="Tu titulo para las redes sociales">
+    <meta property="og:description" content="Tu descripción, puede ser exactamente la misma que la página normal">
+    <meta property="og:image" content="https://aaaaa.png">
+    <!-- De acá para arriba modifica todo lo que necesites para optimizar tu SEO -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans+Extra+Condensed:wght@300&family=Mitr&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="CSS/estilos.css">
+    <title>Milagros Sarmiento </title> <!-- Añadirle cosas: ejemplo: Milagros sarmiento | consultoria | contactanos a tatat... -->
+</head>
+<body>
+    <header>
+        <div class="header__container">
+            <a href="index.html"><img src="./multimedia/Logo.png" alt="logo" class="logo animate__animated animate__backInDown"></img></a>
+        </div>
+        <!--AQUI COMIENZA LA BARRA DE NAVEGACION -->
+        <nav class="navbar navbar-expand-sm navbar-light menu">
+            <button class="navbar-toggler bg-colapsa ml-5" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav w-100 justify-content-around">
+                    <li class="nav-item active">
+                        <a class="nav-link fuente-navbar" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fuente-navbar" href="#terapias">Terapias</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fuente-navbar" href="./paginas/sobreMi.html">Sobre mi</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle fuente-navbar" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Multimedia
+                        </a>
+                        <div class="dropdown-menu w-100 justify-content-around dropdown-content bg-nabvar-mobile" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item fuente-navbar" href="./paginas/multimedia.html#fotos">Fotos</a>
+                            <a class="dropdown-item fuente-navbar" href="./paginas/multimedia.html#videos">Videos</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fuente-navbar" href="./paginas/contacto.html">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+<!--Aqui termina la barra de navegación-->
+    </header> 
+    <main>
+<!--Aqui comienza la primer sección-->
+        <section class="container mt-5 mb-5 section_one" >
+            <div class="row d-flex">
+                <div class="col-lg-4 col-md-6 col-sm-12 divImgRedonda" >
+                    <img src="./multimedia/fotoDePerfil.png" alt="Foto de Perfil" class="imgRedonda">
+                </div>
+                    
+                <div class="col-lg-8 col-md-6 txtAside col-sm-12 d-flex align-items-center justify-content-center">
+                    <div>
+                        <p> 
+                            "La buena vida es un proceso, no un estado del ser. Es una dirección, no un destino"
+                        </p>
+                        <p>
+                            1er consulta sin cargo
+                        </p>
+                        <p>
+                            <a href="./paginas/contacto.html" class="contactanos">Contáctanos</a>
+                        </p>
+                    </div>
+                    
+                </div>              
+            </div>          
+        </section >          
+<!--Aqui comienza la segunda sección-->
+        <section class="container mt-5 mb-5">
+            <div class="card-group text-center">
+                <div class="card">
+                <img src="./multimedia/terapiaPadresHijos.jpeg" class="card-img-top" alt="Imagen de madre e hijo">
+                <div class="card-body bg-card">
+                    <h5 class="card-title">Terapia con niños y padres</h5>
+                    <p class="card-text"> Todos los niños-as comunican, y la mejor forma que tienen de comunicar es a través de sus conductas y sus impulsos.</p>
+                    <a href="#padres" class="btn button-card">Mas Información</a>
+                </div>
+                </div>
+                <div class="card">
+                <img src="./multimedia/terapiaAdultos.png" class="card-img-top" alt="Imagen de terapia de adultos">
+                <div class="card-body bg-card">
+                    <h5 class="card-title">Terapia con adultos</h5>
+                    <p class="card-text">Trauma es toda experiencia que desde la percepción de uno mismo-a, se sintió como que la vida de uno-a corría peligro..</p>
+                    <a href="#adultos" class="btn button-card">Mas Información</a>
+                </div>
+                </div>
+                <div class="card">
+                <img src="./multimedia/consultoriaClinica.jpg" class="card-img-top" alt="Imagen de consultoria clinica">
+                <div class="card-body bg-card">
+                    <h5 class="card-title">Consultoría Clínica</h5>
+                    <p class="card-text">Es un espacio para profesionales que se están formando en juego terapia, en Synergetic Play Therapy (SPT) específicamente.</p>
+                    <a href="#clinica" class="btn button-card">Mas Información</a>
+                </div>
+                </div>
+            </div>
+            <section class="mt-5 terapia" id="terapias">
+                <article class="padres row justify-content-center">
+                    <div class="col-lg-8 justify-content-center mt-5">  
+                        <h3 id="padres" class="text-center mb-5">Terapia con niños y padres</h3>
+                        <p>
+                            Todos los niños-as comunican, y la mejor forma que tienen de comunicar es a través de sus conductas y sus impulsos. El tema es que, como adultos, muchas veces esas conductas, esos impulsos, nos incomodan, no las comprendemos, nos asustan, nos sentimos inseguros, etc. y tendemos a evitarlas, reprimirlas en los niños-as, categorizarlas, etiquetarlas, etc.Intentamos controlar aquello que nos genera inseguridad. Lo curioso es, su manera mas efectiva de comunicar (ya sea bueno o malo) es a través de su energía, de sus acciones, de lo que hacen y dejan de hacer. ¿Cuantos de ustedes estuvieron al lado de un niño-a cuando esta por abrir un regalo?  ¿Cuántos de ustedes estuvieron con un niño-a en una sala de espera de un médico? ¿Cuántos de ustedes estuvieron con un niño-a por entrar a su primer día de clase? ¿su primer día de conocer al hermanito-a?
+                        </p>
+                    </div>  
+                </article>
+
+                <article class="row justify-content-center mt-5 terapia">
+                    <div class="col-lg-8 justify-content-center"> 
+                        <h3 id="adultos" class="text-center mb-5">Terapia con adultos</h3>
+                        <p>Trauma es toda experiencia que desde la percepción de uno mismo-a, se sintió como que la vida de uno-a corría peligro. Muchas veces esta percepción de peligro puede haber sido real o imaginaria, no importa, para el cerebro no hay diferencia entre real o imaginario. Para el cerebro, lo que sucede en la mente es real y punto. Con esta idea de partida podemos decir que la mayoría de los seres humanos en algún punto de nuestro desarrollo evolutivo tuvimos algún trauma,  ¿de acuerdo?  A su vez, podemos decir que unos de los elementos mas importantes para definir trauma es la percepción individual de la experiencia. Por lo tanto, yo como terapeuta no puedo definir lo que es traumático o no, en un individuo. A su vez, cuando un individuo atraviesa un trauma, hay aspectos de esa experiencia que se bloquean en el cuerpo y quedan inconscientes, fuera del campo de consciencia del individuo.
+                        </p>
+                    </div>
+                </article>
+                <article class="row justify-content-center mt-5 terapia">
+                    <div class="col-lg-8 justify-content-center"> 
+                    <h3 id="clinica" class="text-center mb-5">Consultoría Clínica</h3>
+                    <p>
+                        Es un espacio para profesionales que se están formando en juego terapia, en Synergetic Play Therapy (SPT) específicamente. También ofrezco consultorías a profesionales que trabajan en el área de salud mental, que trabajan con niños y con familias. Es un espacio para pensar y compartir casos en donde la devolución que comparto es una combinación de las siguientes miradas: regulación y desregulación del sistema nervioso, neurociencias, mindfulnes y SPT. 
+                    </p>
+                    </div> 
+                </article>
+            </section>
+</main>
+        <footer class="footer">
+            <a href="index.html"><img src="./multimedia/Logo.png" alt="logo"class="logoFooter"></a>
+            <div class="ctc">
+                <p>milagros.sarmiento@cm.com</p>
+                <p>Teléfono: (+54) 9 11 4723-4756</p>
+            </div>
+<!--Aqui irán los links para las rede sociales-->
+            <div class="redesSociales">
+                <a href="#"><img src="./multimedia/facebookChico.png" alt="facebook"></img></a>
+                <a href="#"><img src="./multimedia/instagramChico.png" alt="instagram"></a>
+                <a href="#"><img src="./multimedia/waspChico.png" alt="whatsapp"></a>
+            </div>
+        <section>
+            <p>
+                Todo los derchos reservados&copy;
+            </p>
+        </section>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>

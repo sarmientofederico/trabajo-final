@@ -1,0 +1,258 @@
+
+
+
+
+
+
+
+
+
+/* .menu{
+    font-weight:bolder;
+    text-transform:uppercase;
+    background-color: rgb(8, 55, 135);
+    list-style-type: none;
+    padding: 0; 
+    text-align: center;
+    margin: 0 auto;
+
+} */
+/*------Aqui aplico display flex-------*/
+/* .menu ul{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    text-align: center !important;
+    justify-content: space-evenly;
+}
+.menu li{
+    margin: 0 2%;
+    display: inline-block;
+    text-align: center;
+}
+
+.menu li a {
+    color: rgba(199, 80, 86); 
+    text-decoration: none;
+    display: inline-block;
+    padding: 20px;
+    text-align: center;
+    margin: 0 auto;
+    background-color: rgb(8, 55, 135); 
+    transition: 1s;
+
+}
+.menu li a:hover{
+    background-color: rgba(199, 80, 86);
+    color:rgb(8, 55, 135);
+    transform: scale(1.1,1.1);
+    border-radius: 20%;
+}  
+
+.menu ul ul {
+    position: absolute;
+    display: none;
+}
+.menu ul li{
+    text-align: center;
+    margin: 0 auto;
+}
+.menu ul li:hover ul{
+    display: block;
+    color: rgba(199, 80, 86);
+    background-color:rgb(8, 55, 135);
+    padding: 0;
+    margin: 0;
+    width: 8.8rem;
+    border: none; 
+}
+.menu ul ul li:hover{
+    display: block;
+    color: rgba(199, 80, 86);
+    background-color:rgb(8, 55, 135);
+    width: 8.6rem; 
+    padding: 0;
+    margin:0;
+    border: none;
+} */
+
+
+.imgRedonda{
+    display: block;
+    border-radius: 95px;
+    max-width: 100%;
+    
+
+}
+@media screen and (max-width:776px){
+    .imgRedonda{
+        max-width: 100vw;
+    }
+} 
+
+
+.txtAside{
+    text-align: center;
+    /* display: inline-block !important; */
+} 
+
+
+.imgCuadrada {
+    display: inline-block;
+    width: 300px;
+    text-align: center;
+}
+
+.button-card{
+    color: rgba(199, 80, 86);
+    background-color: rgb(8, 55, 135); 
+    font-family: 'Fira Sans Extra Condensed', sans-serif; 
+    font-weight:bolder;
+    text-transform:uppercase;
+}
+
+.bg-card{
+    background-color: rgb(253, 246, 232);
+}
+
+
+.footer{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 80px;
+    background-color:rgb(8, 55, 135);
+    color: rgba(199, 80, 86);
+    justify-content: space-between;
+    width: 100%;
+}
+.logoFooter{
+    height: 110px;
+    border: solid 5px rgb(8, 55, 135);
+}
+
+.ctc{
+    width:250px;
+    text-align: center;
+    margin-top: 80px;
+    padding: 0;
+}
+.redesSociales{
+
+    margin-top: 70px;
+}
+footer section{
+    text-align: center;
+}
+/*------AQUI APLIQUE MODO RESPONSIVE MEDIA QUERRIES AL FOOTER ----*/ 
+@media screen and (max-width:768px) and (min-width:481px){
+
+    .logoFooter{
+        display: inline-block;
+        margin:0 auto 0 100px;
+    }   
+    .ctc{
+
+        width:250px;
+        font-size: 1.4rem;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 0;
+        margin-top: 0;
+        margin: 5px auto 0 auto;
+    }
+    .redesSociales{
+
+        display: flex;
+        justify-content: flex-end;
+        margin: 20px auto 0 auto;
+    }
+}
+
+
+/*------AQUI EMPIEZA HTML SOBRE MI----*/
+
+.imgSobreMi{
+
+    border-radius: 95px;
+    width: 300px;
+    display:inline-block ;
+    margin: 0 auto;
+}
+
+/*------AQUI EMPIEZA CONTACTO----*/
+
+.formulario{
+    margin-top: 100px;
+    width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+input, textarea, label{
+    margin: 1em;
+}
+
+textarea {
+    width: 80%;
+    margin: 0 10%;
+}
+/*------AQUI EMPIEZA GRACIAS POR CONTACTARNOS----*/
+#rta{
+    height:45vh;
+}
+#rta h2{
+    display: inline-block;
+    margin-top: 30px ;
+    margin-left: 30px;
+}
+#rta a{
+    display: block;
+    margin:45px;
+    margin-left:30px;
+}
+/*------AQUI EMPIEZA EL HTML MULTIMEDIA----*/
+
+
+.multimedia{
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: center;
+    margin: 0 auto;
+    justify-content: space-evenly;
+    
+    
+
+}#fotos h2{
+    text-align: center;
+    margin:2rem auto 2rem auto;
+    
+}
+#videos h2{
+    text-align: center;
+    margin:2rem auto 2rem auto;
+    
+}
+.imagenes img{
+    width: 28rem;
+    height: 18rem;
+}
+
+.imagenes, .videos{
+    margin:1rem auto;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+
+    
+}
+.imagenes img, .videos iframe{
+    align-self: center;
+    margin:1rem auto;
+    justify-content: space-evenly;
+
+}

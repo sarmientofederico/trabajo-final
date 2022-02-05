@@ -1,0 +1,262 @@
+/*Aqui comienza el body*/
+body {
+  font-family: "Fira Sans Extra Condensed", sans-serif;
+  background-color: #fdf6e8;
+}
+body * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+@media screen and (max-width: 480px) and (min-width: 320px) {
+  body {
+    /*------AQUI APLIQUE MODO RESPONSIVE MEDIA QUERRIES AL BODY ----*/
+    font-size: 2rem;
+  }
+}
+@media screen and (max-width: 768px) and (min-width: 481px) {
+  body {
+    font-size: 1.5rem;
+  }
+}
+body h1, body h2, body h3 {
+  font-family: "Mitr", sans-serif;
+}
+
+/*Aqui comienza el body*/
+header .header__container {
+  width: 150px;
+  margin-right: auto;
+  margin-left: auto;
+}
+header .header__container .logo {
+  width: 150px;
+}
+header .navbar {
+  background-color: #083787;
+}
+header .navbar .bg-colapsa {
+  background-color: #c75056;
+}
+header .navbar div ul li a {
+  color: #c75056 !important;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+}
+header .navbar div ul li a:hover {
+  background-color: #c75056;
+  color: #083787 !important;
+  transform: scale(1.1, 1.08);
+  border-radius: 20%;
+  transition: 1s;
+}
+header .navbar .navbar-collapse .dropdown-content {
+  background-color: #083787;
+}
+
+/*Aqui comienza el Main del Index*/
+main .contactanos {
+  padding: 0.5em 1em;
+  border-radius: 0.1em;
+  color: #c75056 !important;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+  text-decoration: none;
+  background-color: #083787;
+}
+main .container div div div {
+  display: flex;
+  justify-content: space-evenly;
+  height: 100%;
+  flex-direction: column;
+  font-size: 1.5em;
+}
+@media screen and (max-width: 700px) {
+  main .container div div div {
+    font-size: 1.2em;
+  }
+}
+@media screen and (max-width: 700px) {
+  main .container div div div p {
+    margin: 1em 0;
+  }
+}
+main .container div div .imgRedonda {
+  display: block;
+  border-radius: 95px;
+  max-width: 100%;
+}
+@media screen and (max-width: 776px) {
+  main .container div div .imgRedonda {
+    width: 100vw;
+  }
+}
+main .container div div .imgRedonda a .button-card {
+  color: #c75056;
+  background-color: #083787;
+  font-family: "Fira Sans Extra Condensed", sans-serif;
+  font-weight: bolder;
+  text-transform: uppercase;
+}
+main .container div div .imgRedonda .bg-card {
+  background-color: #fff;
+}
+main .container div div .imgRedonda .txtAside {
+  text-align: center;
+}
+@media screen and (max-width: 776px) {
+  main .container div div .imgRedonda .txtAside {
+    width: 100vw;
+  }
+}
+main .container div .card .bg-card {
+  background-color: #fdf6e8;
+}
+main .container div .card .bg-card a {
+  color: #c75056 !important;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+  background-color: #083787;
+}
+main .container .terapia p {
+  font-size: 1.5em;
+}
+@media screen and (max-width: 900px) {
+  main .container .terapia p {
+    font-size: 0.8em;
+  }
+}
+@media screen and (max-width: 400px) {
+  main .container .terapia p {
+    font-size: 0.6em;
+  }
+}
+
+/* Multimedia */
+@media screen and (max-width: 450px) {
+  header .logo {
+    width: 100%;
+    height: 20vh;
+  }
+}
+
+.multimedia .otos {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+.multimedia .multimedia_container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.multimedia .multimedia_container .multimedia__tittle {
+  margin: 1em 0;
+}
+.multimedia .videos {
+  width: 100%;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  grid-template-columns: repeat(2, 50%);
+}
+@media screen and (max-width: 900px) {
+  .multimedia .videos {
+    grid-template-columns: 100%;
+  }
+}
+.multimedia .videos iframe {
+  width: 100%;
+  height: 40vh;
+}
+
+/* Contacto */
+main form {
+  margin-top: 5em;
+}
+main form .formulario {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+main form .formulario legend {
+  width: 100%;
+  margin: 1em 0;
+  display: flex;
+  justify-content: center;
+}
+main form .formulario input, main form .formulario label, main form .formulario select {
+  margin: 0.5em 0;
+}
+main form .formulario textarea {
+  width: 20em;
+}
+@media screen and (max-width: 650px) {
+  main form .formulario textarea {
+    width: 90%;
+  }
+}
+
+/*Aqui comienza el Footer*/
+.footer {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 80px;
+  background-color: #083787;
+  color: #c75056;
+  width: 100%;
+}
+@media screen and (max-width: 485px) {
+  .footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+.footer a .logoFooter {
+  height: 110px;
+  border: solid 5px #083787;
+  /*------AQUI APLIQUE MODO RESPONSIVE MEDIA QUERRIES AL FOOTER ----*/
+}
+@media screen and (max-width: 768px) and (min-width: 481px) {
+  .footer a .logoFooter {
+    display: inline-block;
+  }
+}
+.footer .ctc {
+  text-align: center;
+  margin-top: 80px;
+  padding: 0;
+}
+@media screen and (max-width: 481px) {
+  .footer .ctc {
+    text-align: center;
+    margin: 0 auto;
+    width: 100%;
+  }
+}
+.footer .redesSociales {
+  margin-top: 70px;
+}
+@media screen and (max-width: 768px) and (min-width: 481px) {
+  .footer .redesSociales {
+    display: flex;
+    justify-content: flex-end;
+    margin: 20px auto 0 auto;
+  }
+}
+
+section {
+  text-align: center;
+}
+
+/*# sourceMappingURL=estilos.css.map */
